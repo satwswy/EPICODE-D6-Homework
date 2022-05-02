@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portofolio</title>
+    <style>
+
+        body{
+            background-color: grey;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #image1{
+            background-color: black;
+            text-align: center;
+        
+           
+            
+        }
+        #one {
+            width: 250px;
+            height: 450px;
+            object-fit: contain;
+            
+        }
+        #left-image{
+            position: absolute;  
+            top: 50px;
+            left: 150px;
+        }
+        #two{
+            width: 250px;
+            height: 350px;
+        }
+        #right-image{
+            position: absolute;
+            right: 50px;
+            top: 100px;
+        }
+        #motivation1
+        {
+            color: rgb(169, 169, 71);
+            font-weight: 700;
+            
+        }
+        #motivation2
+        {
+            color: rgb(158, 158, 71);
+            font-weight: 700;
+            
+            
+        }
+        #left-text
+        {
+            position: absolute;
+            width: 150px;
+            left: 700px;
+            top: 150px;
+            font-size: large;
+        }
+        #right-text
+        {
+            position: absolute;
+            width: 150px;
+            right: 700px;
+            top: 150px;
+            font-size: large;
+            
+        }
+        #About-me{
+            text-align: center;
+            background-color: rgb(54, 45, 45);
+            
+        }
+        #AM{
+            margin-top: 0px;
+            color: rgb(136, 199, 97);
+        }
+        #secondpart{
+            display: inline-block;
+            vertical-align: top;
+         
+        }
+
+        #thirdpart{
+            display: inline-block;
+            background-color: aqua;
+            background-image: url('success-mindset.webp');
+            
+            width: 1200px;
+            height: 800px;
+            overflow: hidden;
+            margin-left: 200px;
+            
+            
+        }
+        #firstlist{
+            display: inline-block;
+            width: 300px;
+            background-color: rgb(93, 77, 77);
+            text-align: left;
+            font-weight: 700;
+            color: rgb(209, 189, 189);
+            font-size: large;
+        
+            
+        }
+        #secondlist{
+            display: inline-block;
+            width:300px;
+            background-color: rgb(93, 77, 77);
+            text-align: left;
+            font-weight: 700;
+            color: rgb(209, 189, 189);
+            font-size: large;
+        }
+        #thirdlist{
+            display: inline-block;
+            width: 300px;
+            background-color: rgb(93, 77, 77);
+            text-align: left;
+            font-weight: 700;
+            color: rgb(209, 189, 189);
+            font-size: large;
+        
+          
+        }
+        #h3{
+            text-align: center;
+            text-decoration: underline;
+            font-weight: 700;
+            font-size: x-large;
+        }
+        #work{
+            text-align: center;
+            text-decoration: underline;
+            font-weight: 700;
+            font-size: x-large;
+        }
+        #edu{
+            text-align: center;
+            text-decoration: underline;
+            font-weight: 700;
+            font-size: x-large;
+        }
+        #Skills{
+            padding-left: 70px;
+            text-decoration: underline;
+            font-weight: 700;
+            font-size: x-large;
+        }
+        #motivationletter{
+            padding-top: 250px;
+            
+        }
+        #motivletter{
+           
+            color: white;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: underline;
+        
+           
+            font-weight: 700;
+            
+        }
+        #motiletter{
+            width: 700px;
+            position: absolute;
+            color: white;
+            font-size:xx-large;
+            font-weight: 700;
+            visibility: hidden;
+            right: 0;
+            transition: 0.3s ease;
+            
+        }
+        #lastspan{
+            
+        
+            width: 500px;
+            
+        }
+        
+
+        #thirdpart:hover #motiletter{
+            transform: translateX(-160px);
+            transition: 0.3s ease;
+            visibility: visible;
+          
+        }
+        #thirdpart:hover{
+            filter: brightness(95%);
+        }
+        #nice{
+            text-align: center;
+        
+            left: 513px;
+        }
+        #facebook{
+            background-color: blue;
+            color: white;
+            padding: 5px ;
+            text-align: center;
+            display: inline-block;
+            font-size: 12pt;
+            border-radius: 50px;
+         
+            
+        }
+        #twitter{
+            background-color: white;
+            color: blue;
+            padding: 5px ;
+            text-align: center;
+            display: inline-block;
+            font-size: 12pt;
+            border-radius: 50px;
+
+        }
+        #instagram{
+            background-color: rgb(171, 84, 84);
+            color: white;
+            padding: 5px ;
+            text-align: center;
+            display: inline-block;
+            font-size: 12pt;
+            border-radius: 50px;
+      
+            bottom: 189px;
+            left: 403px;
+            
+        }
+        #my-socials{
+            display: inline-block;
+           
+            
+        }
+        #socials{
+            display: inline-block;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+            bottom: 90px;
+        }
+        #facebook2 {
+            color: white;
+            text-decoration: none;
+        }
+        #twitter2{
+            color: blue;
+            text-decoration: none;
+        }
+        #instagram2{
+            color: wheat;
+            text-decoration: none;
+        }
+        #gmail{
+            display: inline-block;
+            font-size: xx-large;
+            font-family: Arial, Helvetica, sans-serif;
+            bottom: 290px;
+        }
+        #gmail-button{
+            background-color: white;
+            color: blue;
+            padding: 13px ;
+            text-align: center;
+            display: inline-block;
+            font-size: 12pt;
+            border-radius: 50px;
+            
+            bottom: 332px;
+            left: 400px;
+            background-color: brown;
+        }
+        #gmail2{
+            color: white;
+            text-decoration: none;
+        }
+        #page-content {
+            display: block;
+            height: 100%;
+        }
+        #secondpart {
+            display: inline-block;
+        }
+        #secondpart > *{
+            vertical-align: top;
+        }
+        #lastdiv{
+            position: relative;
+            bottom: 120px;
+            
+        }
+    
+    </style>
+
+
+
+</head>
+<body>
+
+<div id="main">
+
+    <div id="image1"> <img id="one" src="IMG_20200228_164528.jpg">
+    
+        <div id="left-image">
+            <img id="two" src="1_W-r2mKNOtk6i5_QD6h71Zw.png">
+            </div>
+   
+
+            <div id="right-image">
+                <img id="three" src="motivation-e1544660339828.png">
+                </div>   
+
+         <div id="left-text">
+             <span id="motivation1">“When we strive to become better than we are, everything around us becomes better too.”</span>
+         </div>       
+
+         <div id="right-text">
+            <span id="motivation2">“Optimism is the faith that leads to achievement. Nothing can be done without hope and confidence.”</span>
+        </div>       
+    </div>
+    <div id="About-me">
+        <h1 id="AM">ABOUT ME</h1>
+    </div>
+    <div id="page-content">
+    <div id="secondpart">
+        <div id="firstlist">
+            <h2 id="h3">Info</h2>
+            <ul>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+            </ul>
+        </div>
+
+        <div id="secondlist">
+            <h2 id="work">Work experience</h2>
+            <ul>
+                <li>text</li>
+                <li>text
+                </li>
+                <li>text</li>
+                <li>text</li>
+            </ul>
+        </div>
+        <div id="thirdlist">
+            <h2 id="edu">Educational path</h2>
+            <ul>
+               text
+                <h3 id="Skills">Skills</h3>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+                <li>text</li>
+            </ul>
+        </div>
+    </div> 
+
+    <div id="thirdpart">
+        <div id="motivationletter"> <h2 id="motivletter">MOTIVATION LETTER </h2> <span id="nice">(hover to view)</span>
+            <div id="lastspan"><span id="motiletter">A person who lives with integrity and acts honestly. I have self-confidence, I am very hardworking and passionate about coding, I have valuable industrial experience and I can perform exceptionally well in any team or individual work.</span>
+            </div>
+        </div>
+
+    </div>
+    <div id="lastdiv">
+    <div id="buisness">
+        <div id="gmail">For Buisness propositions:</div>
+
+            <button id="gmail-button"><a id="gmail2" href="https://www.google.com/intl/el/gmail/about/">GMAIL</a></button>
+
+    </div>
+    <div id="my-socials">
+        <div id="socials">My socials:</div>
+        <button id="facebook"> <a id="facebook2" href="https://www.facebook.com/">FACEBOOK</button></a>
+        
+            <button id="twitter"><a id="twitter2" href="https://twitter.com/?lang=el">TWITTER</button></a>
+        
+            <button id="instagram"><a id="instagram2" href="https://www.instagram.com/">INSTAGRAM</button></a>
+          
+    
+    </div>    
+    
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    
+</body>
+</html>
