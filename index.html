@@ -378,19 +378,27 @@
            width: 500px;
            height: 250px;
            position: relative;
-           bottom: 100px;
+            top: 100px;
            left: 350px;
+           border-radius: 20px;
 
        }
        #catspan {
            font-size: xx-large;
            color: aliceblue;
            visibility: hidden;
+           transition: 0.3s ease;
+           position: absolute;
+           transform: translateX(-160px);
            
        }
        #cat:hover #catspan {
            
             visibility: visible;
+            transition: 0.3s ease;
+            transform: translateX(0px);
+            
+            
        }
        #cat:hover {
            box-shadow: 15px 20px 28px black;
