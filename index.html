@@ -371,7 +371,30 @@
         #listofhobbies{
             vertical-align: top;
         }
-       
+       #cat {
+           display: inline-block;
+           background-image: url('Thinking-of-getting-a-cat.png');
+           background-size:cover;
+           width: 500px;
+           height: 250px;
+           position: relative;
+           bottom: 100px;
+           left: 350px;
+
+       }
+       #catspan {
+           font-size: xx-large;
+           color: aliceblue;
+           visibility: hidden;
+           
+       }
+       #cat:hover #catspan {
+           
+            visibility: visible;
+       }
+       #cat:hover {
+           box-shadow: 15px 20px 28px black;
+       }
     </style>
 
 
@@ -498,7 +521,9 @@
             <li>Movies</li>
         </ul>
         
-        <div><img src="Hobbies-840x420.webp">
+        
+        <div id="cat">
+            <span id="catspan"> This is a cute cat</span>
         </div>
 
 </div>
